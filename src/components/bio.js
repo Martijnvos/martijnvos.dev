@@ -7,20 +7,13 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
+import me from '../../content/assets/martijn-vos.jpg';
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/martijn-vos.jpg/" }) {
-        childImageSharp {
-          fixed(width: 50, height: 50) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
       site {
         siteMetadata {
           author
@@ -38,24 +31,23 @@ const Bio = () => {
       style={{
         display: `flex`,
         marginBottom: rhythm(2.5),
+        alignItems: 'center'
       }}
     >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
+      <img
+        src={me}
         alt={author}
         style={{
           marginRight: rhythm(1 / 2),
           marginBottom: 0,
-          minWidth: 50,
-          borderRadius: `100%`,
-        }}
-        imgStyle={{
+          width: rhythm(3),
+          height: rhythm(3),
           borderRadius: `50%`,
         }}
       />
-      <p>
+      <p style={{ marginBottom: 0 }}>
         A software blog showcasing and documenting learnings. <br />
-        Made by <a href={`https://twitter.com/${social.twitter}`} target="_blank" rel="noopener noreferrer"><strong>{author}</strong></a>.
+        Curated by <a href={`https://twitter.com/${social.twitter}`} target="_blank" rel="noopener noreferrer"><strong>{author}</strong></a>.
       </p>
     </div>
   )
