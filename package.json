@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "martijnvos.dev-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Source code for the martijnvos.dev blog",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Martijn Vos <info@vosdevelopment.nl>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/Martijnvos/martijnvos.dev/issues"
   },
   "dependencies": {
     "gatsby": "^2.13.73",
@@ -38,7 +38,7 @@
   "devDependencies": {
     "prettier": "^1.18.2"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/Martijnvos/martijnvos.dev#readme",
   "keywords": [
     "gatsby"
   ],
@@ -46,14 +46,13 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/Martijnvos/martijnvos.dev.git"
   },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "test": "echo \"Write tests! \""
   }
 }
