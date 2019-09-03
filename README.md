@@ -10,7 +10,7 @@
 1.  **Clone this project.**
 
     ```sh
-    git clone https://github.com/Martijnvos/martijnvos.dev.git
+    git clone https://github.com/martijnvos/martijnvos.dev.git
     ```
 
 1.  **Start developing.**
