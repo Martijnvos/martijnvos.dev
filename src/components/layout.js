@@ -62,10 +62,32 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <footer
+          style={{
+            marginTop: rhythm(2.5),
+            paddingTop: rhythm(1),
+          }}
+        >
+          <div style={{ float: 'right' }}>
+            <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
+              RSS
+            </a>
+          </div>
+          <a
+            href="https://mobile.twitter.com/vosdevelopment"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Twitter
+          </a>{' '}
+          &bull;{' '}
+          <a
+            href="https://github.com/martijnvos"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
         </footer>
       </div>
     )
