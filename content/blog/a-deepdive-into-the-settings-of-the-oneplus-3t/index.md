@@ -2,6 +2,7 @@
 title: A deepdive into the settings of the OnePlus 3T
 description: OnePlus’ skin on top of Android looks like an exact copy of stock Android. But don’t let the standard looks fool you.
 date: "2017-01-22T20:04:43.365Z"
+featuredImage: oneplus_3t.png
 ---
 
 OnePlus’ skin on top of Android looks like an exact copy of stock Android.  

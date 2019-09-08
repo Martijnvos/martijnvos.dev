@@ -2,6 +2,7 @@
 title: It’s the Material Design tools that nobody talks about
 description: The tools Google has provided to guide you with using Material Design aren’t put in the spotlight that much. Let’s do something about that.
 date: "2017-07-30T09:11:13.683Z"
+featuredImage: material_design.png
 ---
 
 ![Material Design global layout sketch](./material_design.png)

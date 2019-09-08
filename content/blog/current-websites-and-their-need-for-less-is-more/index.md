@@ -2,6 +2,7 @@
 title: Current websites and their need for less is more
 description: We all know someone that goes a little too far. Driving too fast, buying more than needed, you name it. Unfortunately, it turns out that some websites like to take the same approach lately.
 date: "2017-01-30T15:38:08.477Z"
+featuredImage: startled.gif
 ---
 
 We all know someone that goes a little too far. Driving too fast, buying more than needed, you name it. Unfortunately, it turns out that some websites like to take the same approach lately. Let’s talk about that.

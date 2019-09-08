@@ -4,6 +4,7 @@ description: >-
   Can you imagine buying a smartphone without a screen? It’s pretty much
   useless. So why do most people consider screen quality to be very important when buying a TV but less so when buying a smartphone?
 date: "2017-01-25T14:37:12.910Z"
+featuredImage: screen.jpeg
 ---
 
 ![smartphone screen with digitizer underneath](./screen.jpeg)
