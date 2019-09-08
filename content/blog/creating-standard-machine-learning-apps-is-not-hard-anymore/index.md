@@ -2,7 +2,7 @@
 title: Creating standard Machine Learning apps is not hard anymore
 description: Can you make use of algorithms without having to write a single line of algorithm code? I’d say yes, as long as you stick to the more tested waters
 date: "2018-01-18T14:06:24.199Z"
-featuredImage: ORC.png
+featuredImage: OCR.png
 ---
 
 For a while now everybody and their mom has gone crazy over machine learning. It even got to the point of people asking developers if they would be able to implement these machine learning algorithms into their standard portfolio website, just because it‘s the latest trend.  
