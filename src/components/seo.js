@@ -44,7 +44,7 @@ function SEO({ description, lang, meta, title, featuredImage }) {
             title,
           }
         : {
-            title: `${site.siteMetadata.title} — A software blog by Martijn Vos`,
+            title: `A software blog by Martijn Vos — ${site.siteMetadata.title}`,
           }
       )}
       meta={[
