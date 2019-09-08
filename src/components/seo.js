@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, featuredImage }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -18,7 +18,11 @@ function SEO({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
-            author
+            author,
+            siteUrl,
+            social {
+              twitter
+            }
           }
         }
       }
@@ -26,14 +30,23 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  // Add meta image for social media sharing of blog posts based on site URL + image location provided by frontmatter
+  const metaImage = featuredImage ? `${site.siteMetadata.siteUrl}${featuredImage.childImageSharp.sizes.src}` : null;
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      {...(title
+        ? {
+            titleTemplate: `%s — ${site.siteMetadata.title}`,
+            title,
+          }
+        : {
+            title: `A software blog by Martijn Vos — ${site.siteMetadata.title}`,
+          }
+      )}
       meta={[
         {
           name: `description`,
@@ -41,7 +54,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: title || site.siteMetadata.title,
         },
         {
           property: `og:description`,
@@ -57,17 +70,32 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: site.siteMetadata.social.twitter,
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: title || site.siteMetadata.title,
         },
         {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+      ]
+      .concat(
+        metaImage
+          ? [
+              {
+                property: 'og:image',
+                content: metaImage,
+              },
+              {
+                name: 'twitter:image',
+                content: metaImage,
+              },
+            ]
+          : []
+      )
+      .concat(meta)}
     />
   )
 }
