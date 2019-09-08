@@ -55,7 +55,7 @@ module.exports = {
         short_name: `martijnvos.dev`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#F06033`,
+        theme_color: `#F16033`,
         display: `minimal-ui`,
         icon: `content/assets/vosdevelopment_icon.png`,
       },
