@@ -2,6 +2,7 @@
 title: 3 days with the OnePlus 3T in Soft Gold
 description: My current thoughts on using my brand new OnePlus 3T for 3 full days
 date: "2017-01-17T11:23:58.881Z"
+featuredImage: oneplus_3t.png
 ---
 
 ![OnePlus 3T Soft Gold](./oneplus_3t.png)
