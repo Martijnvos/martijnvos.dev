@@ -35,8 +35,15 @@ function SEO({ description, lang, meta, title, featuredImage }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      {...(title
+        ? {
+            titleTemplate: `%s — ${site.siteMetadata.title}`,
+            title,
+          }
+        : {
+            title: `${site.siteMetadata.title} — A software blog by Martijn Vos`,
+          }
+      )}
       meta={[
         {
           name: `description`,
