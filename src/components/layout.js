@@ -3,6 +3,10 @@ import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 
+// Mozilla CC BY 4.0 (https://creativecommons.org/licenses/by/4.0), via Wikimedia Commons
+// https://commons.wikimedia.org/wiki/File:Fxemoji_u1F41E.svg
+import Ladybug from '../../content/svg/ladybug.svg';
+
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
@@ -68,6 +72,9 @@ class Layout extends React.Component {
             paddingTop: rhythm(1),
           }}
         >
+          <p>
+            <Ladybug height="20px" width="20px" fill="#F13333" /> Found a bug? Please <a href="https://github.com/Martijnvos/martijnvos.dev/issues">file an issue on GitHub</a>
+          </p>
           <a
             href="https://mobile.twitter.com/vosdevelopment"
             target="_blank"
