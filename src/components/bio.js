@@ -47,7 +47,7 @@ const Bio = () => {
       />
       <p style={{ marginBottom: 0 }}>
         A software blog showcasing and documenting learnings. <br />
-        Curated by <a href={`https://twitter.com/${social.twitter}`} target="_blank" rel="noopener noreferrer"><strong>{author}</strong></a>.
+        Written by <a href={`https://twitter.com/${social.twitter}`} target="_blank" rel="noopener noreferrer"><strong>{author}</strong></a>.
       </p>
     </div>
   )
