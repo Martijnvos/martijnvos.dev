@@ -1,0 +1,5 @@
+/* Remove default underline of gatsby-remark-autolink-headers */
+
+.anchor {
+  box-shadow: none;
+}
