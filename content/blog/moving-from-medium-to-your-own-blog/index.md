@@ -3,7 +3,7 @@ title: Moving from Medium to your own blog
 description: >-
   Nowadays there are more than enough reasons for using your own blogging platform.
   With all the static site generators it's also easier than ever!
-date: "2019-08-19"
+date: "2019-09-19"
 featuredImage: medium_to_custom_blog.png
 ---
 
