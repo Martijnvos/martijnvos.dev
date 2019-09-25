@@ -3,7 +3,7 @@ title: The podcasts I currently listen to
 description: >-
   I find that podcasts are a great way to learn and keep up-to-date during my commute. Here's a list of the podcasts I listen to right now!
 date: "2019-09-25"
-featuredImage: podcasts.png
+featuredImage: podcasts.jpg
 ---
 
 Since last year my podcast consumption has increased exponentially as I have to travel an average of around 3 hours a day during weekdays.
