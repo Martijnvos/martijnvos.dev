@@ -2,7 +2,7 @@
 title: "Dislaying fixed height Gatsby images with different aspect ratios"
 description: Gatsby has a great tool for creating easy speedy, optimized images. But how do you neatly display images with a fixed height and different aspect ratios?
 date: "2019-10-11"
-featuredImage: anatomy.png
+featuredImage: featuredImage.png
 ---
 
 If you're using Gatsby there's a good chance you've heard of [gatsby-image](https://www.gatsbyjs.org/packages/gatsby-image/).  
