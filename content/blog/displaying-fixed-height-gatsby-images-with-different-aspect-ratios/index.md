@@ -1,5 +1,5 @@
 ---
-title: "Dislaying fixed height Gatsby images with different aspect ratios"
+title: "Displaying fixed height Gatsby images with different aspect ratios"
 description: Gatsby has a great tool for creating easy speedy, optimized images. But how do you neatly display images with a fixed height and different aspect ratios?
 date: "2019-10-11"
 featuredImage: featuredImage.png
