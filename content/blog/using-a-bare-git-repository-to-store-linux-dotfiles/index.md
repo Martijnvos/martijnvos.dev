@@ -6,6 +6,8 @@ date: "2019-12-05"
 featuredImage: repo.png
 ---
 
+![My own dotfiles repository](./repo.png)
+
 Dotfiles are the foundation of your Linux configuration. Pushing them to a remote Git repository will make it easy to set up other distro's in the future. No more reconfiguring everything by hand. Just clone your repository and you're off to the races. In this blog post I'll show you my configuration which makes use of a bare Git repository. Let's take a look!
 
 # What's a bare Git repository?
