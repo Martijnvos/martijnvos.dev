@@ -22,7 +22,7 @@ A bare repository can be viewed as a local reference point with which you can pu
 
 Configuring a bare repository can be done very quickly and elegantly. Only 5 console commands have to be executed in order to get all of this to work (ignore the numbering).
 
-```sh
+```bash
 # Create the directory for your bare repository
 1. mkdir ~/.dotfiles
 
