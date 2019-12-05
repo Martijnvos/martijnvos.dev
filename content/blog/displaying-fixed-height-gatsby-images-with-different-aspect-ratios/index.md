@@ -195,7 +195,7 @@ module.exports = {
 
 With this little bit of code we got the demo up and running! Note that the images always have a maximum height of 300 pixels and are nicely displayed in the center, no matter the aspect ratio.
 
-![webpage with images correctly alligned](anatomy.png)
+![webpage with images correctly aligned](anatomy.png)
 
 ## Conclusion
 
