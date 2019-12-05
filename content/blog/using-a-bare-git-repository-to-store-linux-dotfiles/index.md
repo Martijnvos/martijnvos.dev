@@ -94,4 +94,5 @@ You now know how I manage my dotfiles without too much fuss. I'm still very new 
 Credit for this method goes to [StreakyCobra's Hacker News comment](https://news.ycombinator.com/item?id=11070797), which is also referenced in the [Arch Wiki article on dotfiles](https://wiki.archlinux.org/index.php/Dotfiles#Tracking_dotfiles_directly_with_Git). 
 Honorable mention to the [Atlassian blog post](https://www.atlassian.com/git/tutorials/dotfiles) of [Nicola Paolucci](https://twitter.com/durdn) which explains this concept as well.
 
-As always, thank you for reading!
+As always, thank you for reading!  
+If you're interested in my dotfiles you can find them [here](https://github.com/Martijnvos/dotfiles/tree/master)
