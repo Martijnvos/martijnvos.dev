@@ -23,10 +23,6 @@ At first I thought a low volume level was the culprit, but that quickly turned o
 ## Freeze after suspend
 This one was a particularly annoying problem. Every time I would open the lid of my laptop it would freeze with no way for me to get to a command line. I've tried waiting for a good 10 minutes in hopes of the laptop unfreezing. That turned out to have no effect though. The only way I could get my system operational again was by doing a hard shutdown, which is not ideal to say the least.
 
-
-
-In the case of the prob
-
 # Troubleshooting
 
 After my experiment with raising the volume, the next logical step was trying my Bluetooth headset. Luckily, that device DID work.  
