@@ -3,7 +3,7 @@ title: What my Arch Linux setup currently looks like
 description: >-
   It's been around 2 months since I first started using Arch Linux on my laptop. These are the applications/packages that stood out to me.
 date: "2020-02-01"
-featuredImage: neofetch.png
+featuredImage: arch-logo.png
 ---
 
 I ended my [last post](https://martijnvos.dev/a-few-issues-i-encountered-on-linux-kernel-5.4.2/) with the following:
@@ -12,7 +12,7 @@ I ended my [last post](https://martijnvos.dev/a-few-issues-i-encountered-on-linu
 
 Well, it obviously didn't age well considering that was posted December 11th last year. Better late then never though, let's dive in!
 
-![neofetch in terminal displaying some stats](neofetch-cropped.png)
+![neofetch in terminal displaying some stats](neofetch.png)
 
 <div style="color: #856404; background-color: #fff3cd; border-color: #ffeeba; padding: .75rem 1.25rem; margin-bottom: 1rem; border: 1px solid transparent border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; border-radius: .25rem;" role="alert">
     This blog post will only discuss the packages I use thus far. I'm planning on writing separate posts about configuring them.
