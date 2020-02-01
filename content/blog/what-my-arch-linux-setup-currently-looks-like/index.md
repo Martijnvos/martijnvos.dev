@@ -100,6 +100,7 @@ Now that we've got a stable system (or at least think we do) we can move on to a
     │   android-tools
     |   android-emulator
     |   android-studio
+    |   jdk8-openjdk
 
 ```
 
