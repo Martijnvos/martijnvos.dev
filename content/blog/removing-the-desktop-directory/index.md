@@ -3,7 +3,7 @@ title: Removing the Desktop directory
 description: >-
   A Desktop directory is useless in window managers. Let's make sure it doesn't get (re)generated anymore.
 date: "2020-03-15"
-featuredImage: home-directory.png
+featuredImage: desktop-icon.png
 ---
 
 <figure style="text-align: center;">
