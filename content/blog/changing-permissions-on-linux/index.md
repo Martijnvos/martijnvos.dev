@@ -4,6 +4,7 @@ description: I've recently encountered a situation in which I needed to change p
 date: "2020-06-02"
 featuredImage: chmod.png
 ---
+import InfoBox from "../../../src/components/infobox.js"
 
 After copying some files from a USB drive I noticed a lot of the folders had more permissions than they actually needed. That's when I started diving into `chmod` and noticed there's more to it than basic current user file permission changes.
 
@@ -14,9 +15,9 @@ After copying some files from a USB drive I noticed a lot of the folders had mor
 - "w" for write
 - "x" for execute
 
-<div style="color: #856404; background-color: #fff3cd; border-color: #ffeeba; padding: .75rem 1.25rem; margin-bottom: 1rem; border: 1px solid transparent border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; border-radius: .25rem;" role="alert">
-See the man page for more supported characters (man chmod) 
-</div>
+<InfoBox type="warning">
+    See the man page for more supported characters (man chmod) 
+</InfoBox>
 
 Want to add write permissions to a file or folder? Just run the following and you're golden:
 ```bash
@@ -73,9 +74,9 @@ Here the first parameter is 7, which is the result of read (4), write (2) and ex
 2. Other users in the file's group
 3. Other users _NOT_ in the file's group 
  
-<div style="color: #856404; background-color: #fff3cd; border-color: #ffeeba; padding: .75rem 1.25rem; margin-bottom: 1rem; border: 1px solid transparent border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; border-radius: .25rem;" role="alert">
-There's actually a parameter that precedes the ones listed here. Not defining it ignores the value though
-</div>
+<InfoBox type="warning">
+    There's actually a parameter that precedes the ones listed here. Not defining it ignores the value though
+</InfoBox>
 
 This results in me, as a user, being able to read, write and execute while other users can only read and execute. Just the way I want it!
 

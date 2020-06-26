@@ -7,13 +7,7 @@ featuredImage: startled.png
 
 We all know someone that goes a little too far. Driving too fast, buying more than needed, you name it. Unfortunately, it turns out that some websites like to take the same approach lately. Let’s talk about that.
 
-<figure style="text-align: center;">
-  <img src="./startled.gif" alt="drawing of startled character with flashing colors all over" />
-
-  <figcaption style="text-align: center;">
-    <em>A representation of my state when viewing some websites</em>
-  </figcaption>
-</figure>
+![Drawing of startled character with flashing colors all over](./startled.png)
 
 ### Absurd animations
 

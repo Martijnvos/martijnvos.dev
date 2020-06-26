@@ -5,6 +5,7 @@ description: >-
 date: "2020-02-01"
 featuredImage: arch-logo.png
 ---
+import InfoBox from "../../../src/components/infobox.js"
 
 I ended my [last post](https://martijnvos.dev/a-few-issues-i-encountered-on-linux-kernel-5.4.2/) with the following:
 
@@ -14,9 +15,9 @@ Well, it obviously didn't age well considering that was posted December 11th las
 
 ![neofetch in terminal displaying some stats](neofetch.png)
 
-<div style="color: #856404; background-color: #fff3cd; border-color: #ffeeba; padding: .75rem 1.25rem; margin-bottom: 1rem; border: 1px solid transparent border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; border-radius: .25rem;" role="alert">
+<InfoBox type="warning">
     This blog post will only discuss the packages I use thus far. I'm planning on writing separate posts about configuring them.
-</div>
+</InfoBox>
 
 ## Staring into the dark (quite literally)
 
@@ -37,9 +38,9 @@ Regarding sudo: always ask yourself the question ['What would sudowoodo do?'](ht
 
 There are quite a few packages here, so I separated them into sections in an attempt to make them easier to glance over. 
 
-<div style="color: #004085; background-color: #cce5ff; border-color: #b8daff; padding: .75rem 1.25rem; margin-bottom: 1rem; border: 1px solid transparent border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; border-radius: .25rem;" role="alert">
+<InfoBox>
     If you think something is missing or you have a suggestion, I'd love for you to get in contact!
-</div>
+</InfoBox>
 
 ### The essentials
 
@@ -104,9 +105,9 @@ Now that we've got a stable system (or at least think we do) we can move on to a
 
 ```
 
-<div style="color: #856404; background-color: #fff3cd; border-color: #ffeeba; padding: .75rem 1.25rem; margin-bottom: 1rem; border: 1px solid transparent border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; border-radius: .25rem;" role="alert">
+<InfoBox type="warning">
     Keep in mind that your configuration might vary wildly depending on the work you do. Don't just install this for the sake of it.
-</div>
+</InfoBox>
 
 **Tools**
 

@@ -5,14 +5,15 @@ description: >-
 date: "2019-12-11"
 featuredImage: pacman.png
 ---
+import InfoBox from "../../../src/components/infobox.js"
 
 ![Highlighted Linux kernel version 5.4.2 after Pacman local search](./pacman.png)
 
 I've been running into some audio and suspend issues after updating to Linux 5.4.2 on my Arch Linux intallation. Fortunately I was able to fix them both with a single kernel parameter!
 
-<div style="color: #856404; background-color: #fff3cd; border-color: #ffeeba; padding: .75rem 1.25rem; margin-bottom: 1rem; border: 1px solid transparent border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; border-radius: .25rem;" role="alert">
+<InfoBox type="warning">
     This proved to work on my Lenovo Thinkpad X1 Carbon 7th gen. Your mileage might vary.
-</div>
+</InfoBox>
 
 # The problems
 ## Audio
@@ -31,7 +32,7 @@ Cool, know we narrowed the problem down to the internal speakers. Since I've had
 
 Only after dragging my good old friend Google into this I managed to find [people having similar issues](https://bbs.archlinux.org/viewtopic.php?id=251157). Before I knew it, I had the solution at hand. This was further confirmed by [a bug report](https://bugs.archlinux.org/task/64720) in which is stated that a fix for this problem will be integrated in kernel version 5.5 (1).
 
-Luckily for me this also fixed the freezing after suspend. A logical reason for this is that an error in detecting the correct audio firmware (```Direct firmware load for intel/sof/sof-cnl.ri failed with error -2```) was the culprit of a messed up system to the point of freezing completely. I found this error after running ```journalctl -p 3 -xb```, which only displays error messages since last boot.
+Luckily for me this also fixed the freezing after suspend. A logical reason for this is that an error in detecting the correct audio firmware (`Direct firmware load for intel/sof/sof-cnl.ri failed with error -2`) was the culprit of a messed up system to the point of freezing completely. I found this error after running `journalctl -p 3 -xb`, which only displays error messages since last boot.
 
 # The solution
 The quick and easy solution to this problem was adding the following text to the kernel parameters:
@@ -40,20 +41,20 @@ The quick and easy solution to this problem was adding the following text to the
 snd_hda_intel.dmic_detect=0
 ```
 
-I decided to do this via the ```/etc/default/grub``` file in order for my setting to stick after reboot. We edit ```/etc/default/grub``` because its best practice to override with ```grub-mkconfig``` instead of changing ```/boot/grub/grub.cfg```  directly.
+I decided to do this via the `/etc/default/grub` file in order for my setting to stick after reboot. We edit `/etc/default/grub` because its best practice to override with `grub-mkconfig` instead of changing `/boot/grub/grub.cfg` directly.
 
 Make sure you're using Grub if you want to follow along, otherwise you'll be better off reading the [Arch Wiki item](https://wiki.archlinux.org/index.php/kernel_parameters).
 
 Okay, let's go through this step by step:
 
-1. Open ```etc/default/grub``` in your favourite editor
-2. Add ```snd_hda_intel.dmic_detect=0``` to the line starting with ```GRUB_CMDLINE_LINUX_DEFAULT``` (this should be somewhat at the top of the file)
+1. Open `etc/default/grub` in your favourite editor
+2. Add `snd_hda_intel.dmic_detect=0` to the line starting with `GRUB_CMDLINE_LINUX_DEFAULT` (this should be somewhat at the top of the file)
 3. Save the file and exit out of it
-4. Don't forget to run ```grub-mkconfig -o /boot/grub/grub.cfg``` in order to override the current grub configuration, otherwise the changes won't be applied on your next reboot
+4. Don't forget to run `grub-mkconfig -o /boot/grub/grub.cfg` in order to override the current grub configuration, otherwise the changes won't be applied on your next reboot
 
 Now all that's left to do is bask in the glory of working audio and no freezes after suspend!
 
-<hr>
+<hr/>
 
 I hope this blog post was useful or at least entertaining to you.
 Keep your eyes peeled for some Arch Linux installation & configuration notes coming to you shortly!

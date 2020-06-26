@@ -4,6 +4,7 @@ description: Gatsby has a great tool for creating easy speedy, optimized images.
 date: "2019-10-11"
 featuredImage: featuredImage.png
 ---
+import InfoBox from "../../../src/components/infobox.js"
 
 If you're using Gatsby there's a good chance you've heard of [gatsby-image](https://www.gatsbyjs.org/packages/gatsby-image/).  
 It's a useful tool that easily creates speedy, optimized images for you. I struggled with getting fluid images with a fixed height to display nicely though, especially when they have different aspect ratios. This post describes the final solution I came op with.
@@ -44,9 +45,9 @@ export const query = graphql`
 This way we can only use the component for a single image though. This is the case because we specify a hardcoded string in the GraphQL query.
 What you'll ideally want is to pass an image as a prop. That's when this wrapper comes in handy:
 
-<div style="color: #721c24; background-color: #f8d7da; border-color: #f5c6cb; padding: .75rem 1.25rem; margin-bottom: 1rem; border: 1px solid transparent border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; border-radius: .25rem;" role="alert">
+<InfoBox type="error">
     Be aware that this solution might not be performant with a large amount of images as it will loop through all files for every instance of the component
-</div>
+</InfoBox>
 
 ```jsx
 import React from "react"
@@ -136,9 +137,9 @@ return (
 1. The style prop indicates that the height of the image will always be 300 pixels. This makes sure none of the images is sticking out due to a difference in aspect ratio.
 2. the objectFit prop is set to 'contain' in order to scale all non-conforming images in a way that best fits the available screen space.
    The default objectPosition is already "50% 50%" meaning it will try to fit everything to the center as best as possible.
-   <div style="color: #856404; background-color: #fff3cd; border-color: #ffeeba; padding: .75rem 1.25rem; margin-bottom: 1rem; border: 1px solid transparent border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; border-radius: .25rem;" role="alert">
+   <InfoBox type="warning">
     For the objectFit prop to work you need to import from "gatsby-image/withIEPolyfill" instead of the regular "gatsby-image"
-   </div>
+   </InfoBox>
 3. The alt tag is determined by the passed in 'alt' prop. If nothing is passed in it defaults to an empty string.
 4. The fluid image source is provided the optimized image from childImageSharp. This is the image that is being shown.
 

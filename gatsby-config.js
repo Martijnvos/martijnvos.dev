@@ -23,10 +23,13 @@ module.exports = {
         name: `assets`,
       },
     },
+	`gatsby-remark-images`,	
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        plugins: [
+        extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [
+          `gatsby-remark-prismjs`,
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -40,7 +43,6 @@ module.exports = {
             },
           },
           `gatsby-remark-autolink-headers`,
-          `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
           `gatsby-remark-external-links`,

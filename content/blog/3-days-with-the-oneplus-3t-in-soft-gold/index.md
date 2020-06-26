@@ -7,7 +7,7 @@ featuredImage: oneplus_3t.png
 
 ![OnePlus 3T Soft Gold](./oneplus_3t.png)
 
-<p style="text-align: center;"><em>OnePlus 3T Soft Gold</em><p>
+<p style="text-align: center;"><em>OnePlus 3T Soft Gold</em></p>
 
 ## Three days with the OnePlus 3T
 
