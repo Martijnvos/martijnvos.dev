@@ -39,7 +39,6 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
-    "gatsby-plugin-simple-analytics": "^1.0.3",
     "prettier": "^2.0.5"
   },
   "homepage": "https://github.com/martijnvos/martijnvos.dev#readme",
